@@ -6,8 +6,8 @@ import com.lowagie.text.pdf.PdfReader;
 
 
 public class PDFMetadataReader {
-  public String readMetadata() throws Exception {
-    PdfReader reader = new PdfReader(".\\src\\test.pdf");
+  public String readMetadata(String relativeFilePath) throws Exception {
+    PdfReader reader = new PdfReader(relativeFilePath);
     String metadata = null;
 
     if (reader.getMetadata() == null) {

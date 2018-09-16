@@ -7,7 +7,7 @@ import java.util.Map;
 public class PDFMetadataReaderConsole {
   public static void main(String[] args) throws Exception {
     System.out.println("Started....");
-    String metadata = new PDFMetadataReader().readMetadata();
+    String metadata = new PDFMetadataReader().readMetadata(".\\src\\test.pdf");
     System.out.println(metadata);
     System.out.println("Ended!");
   }
